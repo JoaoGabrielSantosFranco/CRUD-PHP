@@ -33,6 +33,7 @@ class Vaga
         ]);
         return true;
     }
+    
     //atualiza os dados no banco 
     public function atualizar()
     {
