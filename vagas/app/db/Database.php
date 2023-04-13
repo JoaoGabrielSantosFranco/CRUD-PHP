@@ -50,18 +50,49 @@ class Database
     public function insert($values)
     {
         //datos da QUERY    
-        $fiels = array_keys($values);
-        $binds = array_pad([], count($fiels), '?');
+        $fields = array_keys($values);
+        $binds = array_pad([], count($fields), '?');
 
 
 
         //monta a query
-        $query = 'INSERT INTO ' . $this->table . '(' . implode(',', $fiels) . ') VALUES  (' . implode(',', $binds) . ')';
+        $query = 'INSERT INTO ' . $this->table . '(' . implode(',', $fields) . ') VALUES  (' . implode(',', $binds) . ')';
 
 
         $this->execute($query, array_values($values));
 
         return $this->connection->lastInsertId();
+    }
 
+    public function select($where = null, $order = null, $limit = null, $fields = '*')
+    {
+        $where = strlen($where) ? 'WHERE ' . $where : '';
+        $order = strlen($order) ? 'ORDER BY ' . $order : '';
+        $limit = strlen($limit) ? 'LIMIT ' . $limit : '';
+
+
+        //monta a QUERY
+        $query = 'SELECT ' . $fields . ' FROM ' . $this->table . ' ' . $where . ' ' . $order . ' ' . $limit;
+
+
+        return $this->execute($query);
+    }
+
+
+
+
+    public function update($where, $values)
+    {
+        //dados da query 
+        $fields = array_keys($values);
+
+        //monta a query 
+        $query = 'UPDATE ' . $this->table . ' SET ' . implode('=?,', $fields) . '=? WHERE ' . $where;
+
+        //executa a query 
+        $this->execute($query, array_values($values));
+
+
+        return true;
     }
 }
