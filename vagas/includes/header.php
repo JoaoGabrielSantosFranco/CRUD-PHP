@@ -13,11 +13,11 @@
     <title>CRUD vagas!</title>
 </head>
 
-
-
 <body>
+
+    <div class="jumbotron text-light" style="background-color: #6959CD;">
+        <h1> CRUD Vagas</H1>
+        <p>Exemplo de CRUD feito em PHP orientado a Objetos</p>
+    </div>
+
     <div class="container-fluid">
-        <div class="jumbotron" style="background-color: #90b6f0;">
-            <h1> CRUD Vagas</H1>
-            <p>Exemplo de CRUD feito em PHP orientado a
-        </div>

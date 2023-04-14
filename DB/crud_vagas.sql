@@ -25,8 +25,6 @@ SET time_zone = "+00:00";
 
 --
 -- Estrutura da tabela `vagas`
---
-
 CREATE TABLE `vagas` (
   `id` int(11) NOT NULL,
   `titulo` varchar(255) NOT NULL,
@@ -34,22 +32,9 @@ CREATE TABLE `vagas` (
   `ativo` enum('s','n') NOT NULL,
   `data` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Índices para tabelas despejadas
---
-
---
 -- Índices para tabela `vagas`
---
 ALTER TABLE `vagas`
   ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT de tabelas despejadas
---
-
---
 -- AUTO_INCREMENT de tabela `vagas`
 --
 ALTER TABLE `vagas`
