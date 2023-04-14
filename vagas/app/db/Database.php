@@ -95,4 +95,16 @@ class Database
 
         return true;
     }
+
+
+
+    public function delete($where)
+    {
+        
+        $query = 'DELETE FROM ' . $this->table . ' WHERE ' . $where;
+
+        $this->execute($query);
+
+        return true;
+    }
 }
