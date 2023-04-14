@@ -11,7 +11,7 @@ PHP 7.x ou superior
 MySQL 5.x ou superior
 <br>
 
-Servidor Web (Apache ou Nginx)
+Servidor Web
 <br>
 
 ## Configuração do Banco de Dados
