@@ -75,10 +75,9 @@ $resultados = strlen($resultados) ? $resultados : '<tr>
 
                 <!-- mesma coisa que o <?php echo $resultados ?> -->
                 <!--Está imprimindo na tela a variavel $resultados que recebeu os detalhes da vaga anteriormente.-->
-                <?= 
-           
-                json_encode($vagas)
-                ?>
+                <?=
+                    $resultados
+                    ?>
             </tbody>
         </table>
 
