@@ -93,6 +93,7 @@ class Database
         $this->execute($query, array_values($values));
 
 
+
         return true;
     }
 
@@ -100,7 +101,7 @@ class Database
 
     public function delete($where)
     {
-        
+
         $query = 'DELETE FROM ' . $this->table . ' WHERE ' . $where;
 
         $this->execute($query);
