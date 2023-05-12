@@ -1,49 +1,36 @@
-# Sistema CRUD em PHP e MySQL
-Este é um sistema CRUD básico que permite que você crie, leia, atualize e delete registros em um banco de dados MySQL usando PHP.
+# PHP and MySQL CRUD System
+This is a basic CRUD system that allows you to create, read, update, and delete records in a MySQL database using PHP.
 <br>
-O sistema foi criado com o objetivo de demonstrar como construir um CRUD básico em PHP e MySQL.
-
+The system was created as a demonstration of how to build a basic CRUD system in PHP and MySQL
 ## Requisitos
-
-PHP 7.x ou superior
+PHP 7.x or higher
 <br>
 
-MySQL 5.x ou superior
+MySQL 5.x or higher
 <br>
 
-Servidor Web
+Web server
+
+## Database Configuration
+Create a database in MySQL named "crud_vagas".
 <br>
 
-## Configuração do Banco de Dados
-
-Crie um banco de dados no MySQL com o nome "crud_vagas".
-<br>
-
-Crie uma tabela com o nome "vagas" da seguinte forma:
+Create a table named "vagas" like this:
 <br> 
 ![image](https://user-images.githubusercontent.com/80074087/232055128-e1b72bce-c207-43c1-a0c8-1f9628102b94.png)
 
-## Como usar
+## Usage
+Open a web browser and access the project's URL.
 
-Abra o navegador e acesse a URL do projeto.
-<br>
+On the home page, you'll see a table with the existing records.
 
-Na página inicial, você verá uma tabela com os registros existentes.
-<br>
+Click the "New User" button to add a new record.
 
-Clique no botão Novo Usuário para adicionar um novo registro.
-<br>
+Fill in the user information and click the "Save" button.
 
-Preencha as informações do usuário e clique no botão Salvar.
-<br>
+To edit or delete an existing record, click the corresponding buttons in the table.
 
-Para editar ou excluir um registro existente, clique nos botões correspondentes na tabela.
-<br>
-
-
-
-
-
-## Tela do projeto 
+## Project Screenshot
 ![image](https://user-images.githubusercontent.com/80074087/232127754-0da4ac76-c54b-489f-9625-818b1a5320e9.png)
 
+![image](https://github.com/JoaoGabrielSantosFranco/CRUD-PHP/assets/80074087/5a901557-c874-4d60-9115-fb7284c4b2bd)
